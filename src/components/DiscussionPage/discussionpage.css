@@ -1,0 +1,139 @@
+/* DiscussionPage.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px; /* Increased width */
+    transition: box-shadow 0.3s;
+}
+
+form:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+form textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    transition: border 0.3s;
+}
+
+form textarea:focus {
+    border: 1px solid #007bff; /* Border color on focus */
+    outline: none;
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Add transform */
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: translateY(-2px); /* Button lift effect */
+}
+
+.discussion {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Increased width */
+    transition: box-shadow 0.3s;
+}
+
+.discussion:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.discussion h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.discussion p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.reply-button {
+    background: #28a745; /* Changed color to green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Add transform */
+}
+
+.reply-button:hover {
+    background: #218838;
+    transform: translateY(-1px); /* Button lift effect */
+}
+
+.replies {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #007bff;
+}
+
+.reply {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #e9ecef; /* Light background for replies */
+    border-radius: 5px;
+}
+
+.reply textarea {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    resize: none;
+    transition: border 0.3s;
+}
+
+.reply textarea:focus {
+    border: 1px solid #007bff; /* Border color on focus */
+}
+
+.reply button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Add transform */
+}
+
+.reply button:hover {
+    background: #0056b3;
+    transform: translateY(-1px); /* Button lift effect */
+}
