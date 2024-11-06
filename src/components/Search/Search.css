@@ -1,54 +1,85 @@
+/* Prevent overlap with the navbar */
 .search-page {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 60px auto; /* Added margin to prevent overlap */
     padding: 20px;
     font-family: Arial, sans-serif;
 }
 
+/* Center and style the search input */
 .search-input {
-    width: 70%;
-    padding: 10px;
-    font-size: 16px;
+    width: 60%;
+    padding: 12px;
+    font-size: 18px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
 }
 
+/* Style the search button */
 button {
-    padding: 10px 15px;
+    padding: 12px 20px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+/* Style the genre filter */
 .genre-filter {
     margin: 20px 0;
+    font-size: 16px;
 }
 
+/* Responsive grid for book items */
 .search-results {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
+/* Style each book item */
 .book-item {
     background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: calc(33% - 20px);
-    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
+.book-item:hover {
+    transform: scale(1.03);
+}
+
+/* Style the book images */
 .book-item img {
     max-width: 100%;
-    border-radius: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Style the book title and author */
 .book-info {
     margin-top: 10px;
+    text-align: center;
+}
+
+.book-info h3 {
+    font-size: 16px;
+    color: #007bff;
+    margin: 10px 0 5px;
+}
+
+.book-info p {
+    font-size: 14px;
+    color: #555;
 }
